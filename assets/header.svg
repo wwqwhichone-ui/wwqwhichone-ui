@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+  <title id="t">Weiqi Wang — Robotics × AI × Intelligent Systems</title>
+  <desc id="d">MSc Robotics and Intelligent Systems at HKU. Exploring embodied AI, LLM agents and intelligent robotics.</desc>
+  <style>
+    .bg{fill:#ffffff}.grid{stroke:#e5e7eb}.name{fill:#0b0d12}.sub{fill:#4b5563}.acc{fill:#2563eb}.line{stroke:#2563eb}
+    @media (prefers-color-scheme: dark){.bg{fill:#0d1117}.grid{stroke:#1f2630}.name{fill:#f3f4f6}.sub{fill:#9ca3af}.acc{fill:#60a5fa}.line{stroke:#60a5fa}}
+    text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  </style>
+  <rect class="bg" width="1200" height="260" rx="16"/>
+  <g class="grid" stroke-width="1" opacity=".9">
+    <path d="M760 0V260M840 0V260M920 0V260M1000 0V260M1080 0V260M1160 0V260M720 40H1200M720 100H1200M720 160H1200M720 220H1200"/>
+  </g>
+  <!-- abstract 3-link arm -->
+  <g class="line" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M920 220 L980 140 L1080 120 L1130 70"/>
+  </g>
+  <g class="acc"><circle cx="920" cy="220" r="7"/><circle cx="980" cy="140" r="6"/><circle cx="1080" cy="120" r="6"/><circle cx="1130" cy="70" r="5"/></g>
+  <text x="64" y="96" class="mono acc" font-size="16" letter-spacing="2">ROBOTICS × AI × INTELLIGENT SYSTEMS</text>
+  <text x="64" y="152" class="name" font-size="52" font-weight="700">Weiqi Wang</text>
+  <text x="64" y="196" class="sub" font-size="20">MSc Robotics &amp; Intelligent Systems @ HKU</text>
+  <text x="64" y="224" class="sub" font-size="17">Embodied AI · LLM Agents · Human-Robot Interaction</text>
+</svg>
