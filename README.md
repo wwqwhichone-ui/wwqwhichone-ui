@@ -38,6 +38,8 @@ I'm looking for roles as a **Robotics Engineer**, **AI / LLM Application Enginee
 | Project | What it is | Status |
 | --- | --- | --- |
 | [**llm-robot-task-planner**](https://github.com/wwqwhichone-ui/llm-robot-task-planner) | Natural language → JSON-Schema-validated task plan → mock robot execution. Action whitelist, parameter limits, precondition checks, 24 unit tests. Runs offline; optional Claude backend. | Proof of concept |
+| [**robot-arm-kinematics**](https://github.com/wwqwhichone-ui/robot-arm-kinematics) | NumPy kinematics library: DH forward kinematics, geometric Jacobians, damped-least-squares IK (UR5: 97% success on 500 random poses), quintic trajectories. 21 tests. | Proof of concept |
+| [**mobile-robot-path-planning**](https://github.com/wwqwhichone-ui/mobile-robot-path-planning) | A*, Dijkstra, RRT and RRT* on occupancy grids with obstacle inflation and shortcutting, benchmarked on warehouse and corridor maps. 19 tests. | Proof of concept |
 | **voice-controlled-mobile-manipulator** | MSc dissertation: voice → language understanding → task planning → safe robot actions. | In progress (private) |
 | [**robotics-learning**](https://github.com/wwqwhichone-ui/robotics-learning) | My notes and from-scratch exercises: kinematics, path planning, simulation. | Ongoing |
 | [**ai-agent-experiments**](https://github.com/wwqwhichone-ui/ai-agent-experiments) | Log of small, real experiments with LLM agents and tool calling. | Starting |
@@ -51,7 +53,7 @@ I'm looking for roles as a **Robotics Engineer**, **AI / LLM Application Enginee
 
 <!-- Only list tools actually used. Move items from "Learning" to "Using" when there is a project that shows them. -->
 
-**Using:** Python · Git & GitHub · VS Code · pytest · JSON Schema · LLM APIs · AI coding agents · macOS
+**Using:** Python · NumPy · Matplotlib · pytest · JSON Schema · LLM APIs · Git & GitHub · VS Code · AI coding agents
 
 **Currently learning:** ROS 2 · robot simulation · LLM agent design
 
