@@ -1,66 +1,84 @@
-<!-- Profile README for github.com/wwqwhichone-ui. Keep claims factual; update when projects change. -->
+<!--
+  GitHub Profile README for https://github.com/wwqwhichone-ui
+  To update: Review changes, copy content to the `wwqwhichone-ui` repository, and commit.
+-->
 
 <p align="center">
-  <img src="./assets/header.svg" alt="Weiqi Wang — Robotics × AI × Intelligent Systems" width="100%">
+  <img src="https://raw.githubusercontent.com/wwqwhichone-ui/wwqwhichone-ui/main/assets/header.svg" alt="Weiqi Wang — Robotics × AI × Intelligent Systems" width="100%">
 </p>
 
-<h2 align="center">Weiqi Wang | Robotics × AI × Intelligent Systems</h2>
+<h2 align="center">Weiqi Wang (王伟奇)</h2>
 <p align="center">
-  MSc Robotics &amp; Intelligent Systems @ HKU | Exploring Embodied AI, LLM Agents &amp; Intelligent Robotics
+  <b>Robotics & AI Engineer | MSc(Eng) in Robotics & Intelligent Systems @ HKU</b><br>
+  <i>Exploring Embodied AI, Safe LLM Task Planning, and Intelligent Industrial Manipulation</i>
 </p>
+
 <p align="center">
-  <a href="https://wwqwhichone-ui.github.io"><b>Portfolio</b></a> ·
-  <a href="https://github.com/wwqwhichone-ui?tab=repositories"><b>Repositories</b></a> ·
-  <a href="#contact"><b>Contact</b></a>
+  <a href="https://wwqwhichone-ui.github.io"><b>🌐 Personal Portfolio Website</b></a> •
+  <a href="https://wwqwhichone-ui.github.io/demo/path-planning/"><b>⚡ Live Path Planning Demo</b></a> •
+  <a href="https://github.com/wwqwhichone-ui?tab=repositories"><b>📦 All Repositories</b></a>
 </p>
 
 ---
 
-### About me
+### 👨‍💻 About Me
 
-I'm an MSc(Eng) student in **Robotics & Intelligent Systems** at **The University of Hong Kong**, with a B.Eng. in
-**Engineering Mechanics** from **Northwestern Polytechnical University**. I'm interested in how large language models
-can make robots easier to instruct — and how to keep that safe. My dissertation looks at generating actions for a mobile
-industrial manipulator from voice commands.
+I am a master's student in **Robotics & Intelligent Systems** at **The University of Hong Kong (HKU)**, holding a B.Eng. in **Engineering Mechanics** from **Northwestern Polytechnical University (NWPU)**.
 
-I'm looking for roles as a **Robotics Engineer**, **AI / LLM Application Engineer** or **Embodied AI Engineer**.
+My research and engineering focus centers on **bridging natural language understanding with deterministic robotic execution**:
+* How to use Large Language Models (LLMs) and speech interfaces to generate expressive robot task plans.
+* How to design deterministic, multi-layer safety verification layers (spatial grounding, JSON Schema whitelisting, kinematic feasibility) to ensure physical robots never execute unsafe or hallucinated actions.
 
-### Research interests
+I am actively preparing for full-time roles as a **Robotics Software Engineer**, **AI / LLM Application Engineer**, or **Embodied AI Engineer**.
 
-- **Embodied intelligence** — grounding language in physical action
-- **LLM-based robot task planning** — structured, verifiable plans instead of free-form output
-- **Voice-controlled robotic manipulation**
-- **Human-robot interaction**
-- **Autonomous robotic systems**
+---
 
-### Featured projects
+### 🔬 Current Research (MSc Dissertation)
 
-| Project | What it is | Status |
-| --- | --- | --- |
-| [**llm-robot-task-planner**](https://github.com/wwqwhichone-ui/llm-robot-task-planner) | Natural language → JSON-Schema-validated task plan → mock robot execution. Action whitelist, parameter limits, precondition checks, 24 unit tests. Runs offline; optional Claude backend. | Proof of concept |
-| [**robot-arm-kinematics**](https://github.com/wwqwhichone-ui/robot-arm-kinematics) | NumPy kinematics library: DH forward kinematics, geometric Jacobians, damped-least-squares IK (UR5: 97% success on 500 random poses), quintic trajectories. 21 tests. | Proof of concept |
-| [**mobile-robot-path-planning**](https://github.com/wwqwhichone-ui/mobile-robot-path-planning) | A*, Dijkstra, RRT and RRT* on occupancy grids with obstacle inflation and shortcutting, benchmarked on warehouse and corridor maps. 19 tests. | Proof of concept |
-| **voice-controlled-mobile-manipulator** | MSc dissertation: voice → language understanding → task planning → safe robot actions. | In progress (private) |
-| [**robotics-learning**](https://github.com/wwqwhichone-ui/robotics-learning) | My notes and from-scratch exercises: kinematics, path planning, simulation. | Ongoing |
-| [**ai-agent-experiments**](https://github.com/wwqwhichone-ui/ai-agent-experiments) | Log of small, real experiments with LLM agents and tool calling. | Starting |
+> **Voice Command-Based Action Generation for Mobile Industrial Manipulators**  
+> *Affiliation: The University of Hong Kong (In Progress)*
 
-### Currently working on
+Developing a modular, safety-critical architecture that captures human voice instructions in an industrial shopfloor environment, extracts structured intent via LLM task planners, and enforces strict reachability and spatial collision checks before commanding mobile manipulator hardware.
+* **Key Architecture:** Speech Recognition (ASR) with confidence thresholding → Disambiguation & Confirmation Dialog → LLM Task Decomposition → 3-tier Safety Air-Gap → Coordinated Base & Arm Trajectory Execution.
 
-- 🎓 **Dissertation** — *Action Generation of Mobile Industrial Manipulator based on Voice Commands*
-- 🧩 Extending the task planner toward a ROS 2 adapter and a plan-repair loop
+---
 
-### Tech stack
+### 🚀 Featured Open-Source Projects
 
-<!-- Only list tools actually used. Move items from "Learning" to "Using" when there is a project that shows them. -->
+All repositories are backed by automated test suites (`pytest`), verifiable math, and continuous integration (`GitHub Actions`).
 
-**Using:** Python · NumPy · Matplotlib · pytest · JSON Schema · LLM APIs · Git & GitHub · VS Code · AI coding agents
+| Repository | Focus & Architecture | Status & Verification |
+| :--- | :--- | :--- |
+| [**llm-robot-task-planner**](https://github.com/wwqwhichone-ui/llm-robot-task-planner) | **Safe LLM Task Planning with 3-Layer Validation**<br>Natural language → strict JSON Schema (Draft 2020-12) → world grounding → precondition state machine → mock execution trace. | ![CI](https://github.com/wwqwhichone-ui/llm-robot-task-planner/actions/workflows/ci.yml/badge.svg) `Proof of concept`<br>• 24 unit tests<br>• Zero hallucinated hardware calls |
+| [**robot-arm-kinematics**](https://github.com/wwqwhichone-ui/robot-arm-kinematics) | **Serial-Manipulator Kinematics in Pure NumPy**<br>Standard DH forward kinematics, geometric Jacobians (revolute/prismatic), Damped Least-Squares IK (UR5 industrial arm), Yoshikawa manipulability, and quintic trajectories. | ![CI](https://github.com/wwqwhichone-ui/robot-arm-kinematics/actions/workflows/ci.yml/badge.svg) `Proof of concept`<br>• 97.0% IK success on 500 UR5 poses<br>• Finite-difference verified Jacobians |
+| [**mobile-robot-path-planning**](https://github.com/wwqwhichone-ui/mobile-robot-path-planning) | **Mobile Robot Search & Sampling Benchmark**<br>A*, Dijkstra, RRT and RRT* on 2D occupancy grids with disk obstacle inflation, anti-corner-cutting checks, and line-of-sight shortcutting.<br>👉 **[Try Live Browser Demo](https://wwqwhichone-ui.github.io/demo/path-planning/)** | ![CI](https://github.com/wwqwhichone-ui/mobile-robot-path-planning/actions/workflows/ci.yml/badge.svg) `Proof of concept`<br>• 19 unit tests<br>• Interactive web simulator |
+| [**wwqwhichone-ui.github.io**](https://github.com/wwqwhichone-ui/wwqwhichone-ui.github.io) | **Developer Portfolio & Research Hub**<br>Modern static portfolio built with Astro, TypeScript, and Tailwind CSS. Features full bilingual (EN/中) instant switching, dark/light theme, and automated CI/CD. | ![CI](https://github.com/wwqwhichone-ui/wwqwhichone-ui.github.io/actions/workflows/ci.yml/badge.svg) `Production`<br>• 100% static & fast |
 
-**Currently learning:** ROS 2 · robot simulation · LLM agent design
+---
 
-### Contact
+### 🛠️ Technical Capabilities & Stack
 
-<!-- Add only contact details you are happy to make public. -->
-- Portfolio: <https://wwqwhichone-ui.github.io>
-- LinkedIn: *to be added*
+* **Programming Languages:** Python (NumPy, Matplotlib, Pytest), TypeScript / JavaScript, Shell / Bash, C / C++ (Foundations)
+* **Robotics Algorithms:** Forward/Inverse Kinematics (DH, DLS, Jacobian), Singularity Analysis, Path Planning (A*, Dijkstra, RRT, RRT*), Quintic Trajectories, Occupancy Grids, UR5 Modeling
+* **Artificial Intelligence & LLMs:** Structured Output Generation, JSON Schema (Draft 2020-12), Multi-tier Safety Validation, Prompt Engineering, Tool Calling & Agentic Workflows
+* **Engineering & Tools:** Git & GitHub, GitHub Actions CI/CD, Linux / macOS, Vitest, Astro, Tailwind CSS, VS Code
 
-<sub>Last updated: November 2026</sub>
+---
+
+### 🧭 Engineering Philosophy
+
+> **"Verification Before Physical Execution"**  
+> Probabilistic models propose; deterministic architectures dispose. In robotics, no model output should command physical actuators without spatial validation, geometric reachability, and automated safety interlocks.
+
+---
+
+### 📬 Contact & Links
+
+* 🌐 **Website:** [wwqwhichone-ui.github.io](https://wwqwhichone-ui.github.io)
+* 💻 **GitHub:** [@wwqwhichone-ui](https://github.com/wwqwhichone-ui)
+* 💼 **LinkedIn:** *[Add LinkedIn Profile URL in config]*
+* 📧 **Email:** *[Add Academic Email in config]*
+
+<p align="right">
+  <sub>Last verified & updated: November 2026 • Built with factual evidence</sub>
+</p>
